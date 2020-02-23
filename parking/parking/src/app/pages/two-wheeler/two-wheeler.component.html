@@ -1,0 +1,34 @@
+<div class="container pages text-justify pb-5">  
+    <h1 class="mb-4">Two Wheeler Parking</h1>
+    <div class="container">
+        <form action="" >
+            <div class="form-group">  
+        <div>
+        <b> SLOT :: {{lenth}}/3</b>
+        </div>
+                <div>
+        <label for="" >Time      : </label>
+       
+        <input type="datetime-local" [value]="date" 
+        (change)="date=$event.target.value" class="form-control"/>
+    </div>  
+    <div>
+            <label >Vehicle NO  :</label>
+<input (input)="vehicle_number=$event.target.value" type="text" class="form-control">
+
+        </div>  
+<div><button class="btn btn-success" (click)="submit()">IN</button></div>
+<div>
+<label >Vehicle NO  :</label>
+<input (input)="vehicle_number_remove=$event.target.value" type="text" class="form-control">
+
+        </div>  
+<div><button class="btn btn-success" (click)="submit_remove()">OUT</button></div>
+<div>
+{{data.vehicle_no}}
+</div>
+      
+     
+</div>
+</form>
+</div>

@@ -1,0 +1,20 @@
+
+<div style="width: 400px;height: 400px;background-color:burlywood;top:10%;
+position: absolute;
+left:150px
+"> 
+<!-- <input type="text" size="5" (input)="test($event)"  value={{value1}} ><br/> -->
+<input type="text" size="5" (input)="value1=$event.target.value" ><br/>
+<input type="text" size="5" (input)="value2=$event.target.value" ><br/>
+<!-- value1:{{value1}}
+<input type="text" size="5" value={{value2}}> -->
+<br/>
+<div>
+<button (click)="add()">+</button></div>
+<input type="text" size="5" value={{result}}>
+<div *ngFor='let i of [1,2,3,4,5,6]'>
+    <button (click)='setvl(i)'>{{i}}</button>
+    
+</div>value={{value1}}
+</div>
+

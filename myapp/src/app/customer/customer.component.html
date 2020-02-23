@@ -1,0 +1,33 @@
+<form action="" (ngSubmit)="save()" [formGroup]='customerform'>
+    <div>
+    <label for="">NAME</label></div>
+    <div>
+<input type="text" formControlName='name' required>
+</div>
+
+<div>
+        <label for="">EMAIL</label></div>
+        <div>
+    <input type="text" formControlName='email'>
+    </div>
+    <div formGroupName='address'>
+            <label for="">ADDRESS</label>
+            
+        <div>
+                <label for="">HOUSE_NUMBER</label></div>
+                <div>
+            <input type="text" formControlName='no'>
+            </div>
+            <div>
+                    <label for="">STREET</label></div>
+                    <div>
+                <input type="text" formControlName='street'>
+                </div>
+                <div>
+                        <label for="">CITY</label></div>
+                        <div>
+                    <input type="text" formControlName='city'>
+                    </div></div>
+    
+    <div><input type="submit" value="submit" ></div>
+</form>

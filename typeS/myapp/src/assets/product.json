@@ -1,0 +1,33 @@
+[{
+"pid":"0001",
+"price":"25200",
+"image":"/home/expert/mean_stack/typeS/myapp/src/assets/images/computer.jpeg",
+"description":"good quality better price",
+"name":"Computer"} ,
+ {
+    "pid":"0002",
+    "price":"500",
+    "image":"/home/expert/mean_stack/typeS/myapp/src/assets/images/headphone.jpeg",
+    "description":"valued",
+    "name":"Head Phone"
+    },{
+        "pid":"0003",
+        "price":"5000",
+        "image":"/home/expert/mean_stack/typeS/myapp/src/assets/images/index.png",
+        "description":"better performence",
+        "name":"Mobilephone"
+        },{
+            "pid":"0004",
+            "price":"40000",
+            "image":"/home/expert/mean_stack/typeS/myapp/src/assets/images/laptop.jpeg",
+            "description":"good rating",
+            "name":"Laptop"
+            },{
+                "pid":"0005",
+                "price":"430",
+                "image":"/home/expert/mean_stack/typeS/myapp/src/assets/images/mouse.jpeg",
+                "description":"wireless ",
+                "name":"Mouse"
+                }
+    
+    ]

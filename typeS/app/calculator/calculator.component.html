@@ -1,0 +1,63 @@
+<div style = "width:400px;height: 400px;background-color: aqua;top:25%;position:absolute;left:30%;">
+
+
+
+<!-- <div>
+    <input type="text" value={{value1}}>
+</div>
+-->
+<!-- <div>
+    <input type="text" value={{value2}}>
+</div>
+-->
+
+<div *ngIf="operator==''">
+<div>
+    <input type="text" value={{value1}}>
+    value={{value1}}
+</div>
+</div>
+<div *ngIf="operator!='' && result==0">
+        <div>
+                <input type="text" value={{value2}}>
+                value={{value2}}
+</div>
+</div>
+<div *ngIf ='result!= 0'>
+    <input type="text" value={{result}}>
+    value={{result}}
+
+
+
+</div>
+
+<div>
+        <button (click)="setOperator('+')">+</button>
+    </div>
+    <br>
+    <div style="display:inline;" *ngFor="let i of [1,2,3]">
+        <button (click)='setValue(i)'>{{i}}</button> 
+    </div>
+    <br>
+    <div style="display:inline;" *ngFor="let i of [4,5,6]">
+        <button (click)='setValue(i)'>{{i}}</button> 
+    </div>
+    <br>
+    <div style="display:inline;" *ngFor="let i of [7,8,9,0]">
+        <button (click)='setValue(i)'>{{i}}</button> 
+    </div>  
+      <br>
+      <div>
+            <button (click)="getResult('=')">=</button>
+        </div>
+        <br>
+        <div>
+                <button (click)="reset()('')">CLEAR</button>
+            </div>
+            <br>
+    Result={{result}}
+    </div>
+
+    
+
+

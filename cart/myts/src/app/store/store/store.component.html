@@ -1,0 +1,53 @@
+ <!-- <div class = "container">
+  <h1>Store Register</h1>
+
+   <form action="" (ngSubmit)="save()" [formGroup]='storeregister' >
+     <div class = "form-group" >
+        <label for = "productid">STORE NAME:</label>
+        <input type = "text" class = "form-control" formControlName='storename' required
+            name = "id">
+     </div>
+     <div class = "form-group">
+      <label for = "productid">GST NO:</label>
+      <input type = "text" class = "form-control" formControlName='gst' required
+          name = "id">
+   </div>
+   <div class = "form-group">
+    <label for = "productid">LICENCE NO:</label>
+    <input type = "text" class = "form-control" id = "license_no" formControlName='licence' required
+        name = "id">
+ </div>
+ <button type="submit" class="btn btn-success">SAVE</button>
+    </form>
+</div>
+{{storeregister.status}} -->
+<div style="width: 500;height: 500;" >
+<h1>Store Register</h1>
+
+   <form action="" (ngSubmit)="save(storeform.value)" #storeform="ngForm"  class="form-group" >
+     <div class = "form-group" >
+        <label for = "productid">STORE NAME:</label>
+        <input type = "text" class = "form-control" minlength="5" [(ngModel)]="model.stname" #stname='ngModel' required
+            name = "storenm"> {{stname.value}}
+     </div>
+     <div class = "form-group">
+      <label for = "productid">GST NO:</label>
+      <input type = "text" class = "form-control" [(ngModel)]="model.gst" #gst='ngModel' required
+          name = "gstno"> {{gst.value}}
+   </div>
+   <div class = "form-group">
+    <label for = "productid">LICENCE NO:</label>
+    <input type = "text" class = "form-control" id = "license_no" #liceno='ngModel' [(ngModel)]="model.licenceno" required
+        name = "licence">{{liceno.value}}
+ </div>
+ <button type="submit" class="btn btn-success">SAVE</button>
+ <button (click)="view()">VIEW</button>
+            <ul *ngFor="let store of view_array">
+                <li>{{store.stname}}</li>
+                <li>{{store.gst}}</li>
+                <li>{{store.licenceno}}</li>
+            </ul>
+
+    </form>
+
+  </div>

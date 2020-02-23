@@ -1,0 +1,39 @@
+[{
+"pid":"001",
+"price":25200,
+"image":"assets/images/computer.jpeg",
+"description":"good quality better price",
+"name":"Computer",
+"quantity":0
+} ,
+ {
+    "pid":"0002",
+    "price":500,
+    "image":"assets/images/headphone.jpeg",
+    "description":"valued",
+    "name":"Head Phone",
+    "quantity":0
+    },{
+        "pid":"0003",
+        "price":5000,
+        "image":"assets/images/index.png",
+        "description":"better performence",
+        "name":"Mobilephone",
+        "quantity":0
+        },{
+            "pid":"0004",
+            "price":40000,
+            "image":"assets/images/laptop.jpeg",
+            "description":"good rating",
+            "name":"Laptop",
+            "quantity":0
+            },{
+                "pid":"0005",
+                "price":430,
+                "image":"assets/images/mouse.jpeg",
+                "description":"wireless ",
+                "name":"Mouse",
+                "quantity":0
+                }
+    
+    ]

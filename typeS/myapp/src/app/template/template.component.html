@@ -1,0 +1,15 @@
+<ng-template #mytemplate>
+    <div style="background-color: blueviolet;" >
+    <p style="text-align: center;" >welcome</p>
+    </div>
+</ng-template>
+<ng-template [ngTemplateOutlet]='mytemplate'></ng-template>
+jhg
+<ng-template [ngTemplateOutlet]='mytemplate'></ng-template>
+ <div [ngSwitch]='caseno'>
+     <span *ngSwitchCase='1'>case1</span>
+     <span *ngSwitchCase='2'>case2</span>
+     <span *ngSwitchDefault>default</span>
+     
+ </div>
+

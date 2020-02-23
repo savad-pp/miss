@@ -1,0 +1,7 @@
+<fa-icon [icon]='facoffeeicon'></fa-icon>
+<select name="" id="" (change)="colorvalue=$event.target.value;test()">
+    <option *ngFor="let c of colors">{{c}}</option>
+</select>
+
+<h1 [ngStyle]="{'color':colorvalue}">savad</h1> 
+ <p [ngClass]="{bluebold:color=='active',bluedisabled:color=='disable'}"> welcome</p>   
